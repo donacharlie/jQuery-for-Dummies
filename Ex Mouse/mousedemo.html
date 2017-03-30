@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>mousemove demo</title>
     <style>
-        div {
+        /*div {
             width: 500px;
             height: 500px;
             background-color: yellow;
             float: right;
-        }
+        }*/
         p {
             margin-left: 10px;
             color: red;
@@ -25,7 +25,7 @@
 
     $(document).mousemove(function(event) {
         var pageCoords = "(" + event.pageX + ", " + event.pageY + ")";
-        $ ("p").text("(coords x, coords y) = " + pageCoords);
+        $ ("p:last").text("(coords x, coords y) = " + pageCoords);
 
     });
         
@@ -34,6 +34,7 @@
 </head>
 <body>
     <p>Move the mouse over the div.</p>
-    <div></div>
+    <p></p>
+    <!--<div></div>-->
 </body>
 </html>
