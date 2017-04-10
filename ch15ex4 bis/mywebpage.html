@@ -7,17 +7,17 @@
         <script type=”text/javascript” src=”js/jquery-3.2.0.min.js”></script>
         <script type=”text/javascript”>
             $(document).ready(function(){
-
-                $('#testform').submit(function(){
-                  $.post("test.php",
-                   $("#testform").serialize(),
-                   function(data){
-                         alert(data);
-                   }
-                )});
-               return false;
+            
+                  $("#testform").submit(function(){
+                         $.post("test.php",
+                         $("#testform").serialize(),
+                         function(data){
+                                alert(data);
+                         });  
+                              
+                  })
                
-             });
+            });
         </script>
     </head>
     <body>
