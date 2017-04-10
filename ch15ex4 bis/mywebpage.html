@@ -10,12 +10,11 @@
 
                 $('#testform').submit(function(){
                   $.post("test.php",
-                  $("#testform").serialize(),
-                  function(data){
-                          alert(data);
-                  }
-                });
-                  
+                   $("#testform").serialize(),
+                   function(data){
+                         alert(data);
+                   }
+                )});
                return false;
                
              });
