@@ -8,8 +8,13 @@
         <script type=”text/javascript”>
             $(document).ready(function(){
 
-                //$(‘div’).load(‘days.html’ #friday);
-                
+                $('#testform').submit(function(){
+                  $.post("test.php",
+                  $("#testform").serialize(),
+                  function(data){
+                          alert(data);
+                });
+               return false;
             });
         </script>
     </head>
